@@ -1,0 +1,11 @@
+{
+  "name": "swap-keys-in-object",
+  "version": "1.0.0",
+  "description": "Swaps one key for another in an object.",
+  "main": "swapKeysInObject.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zachary Smith",
+  "license": "MIT"
+}
