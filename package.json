@@ -1,8 +1,8 @@
 {
   "name": "swap-keys-in-object",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "Swaps one key for another in an object",
-  "main": "swapKeysInObject.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
