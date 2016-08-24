@@ -1,37 +1,51 @@
 # Swap keys in an object!
 
-If you have an object like this:
+## Usage
+First install it:
+```
+npm install --save
+```
+
+Then use it:
 
 ```
-const project = {
-    id: 'Ploppy39',
+const swapKeysInObject = require('swap-keys-in-object')
+```
+
+Say you have an object like this:
+
+```
+const oldFellow = {
+    id: 'PloppyNop39',
     name: 'Crumbface',
-    age: 137,
+    age: 137
 }
 ```
 
-And an object that maps your old keys onto your new keys, like this:
+But you want the keys to be preceded by underscores. Create a
+map from your old keys onto your new keys:
 
 ```
 const keyMap = {
     id: '_id',
     name: '_name',
-    age: '_age',
+    age: '_age'
 }
-```
-
-Then you can swap out the old keys for new, like this:
 
 ```
-const newObject = swapKeysInObject(keyMap, project)
+
+Then you can swap out the old keys for new:
+
+```
+const newFellow = swapKeysInObject(keyMap, oldFellow)
 ```
 
-Which gives you this:
+The resulting `newFellow`:
 
 ```
 {
-    _id: 'Ploppy39',
+    _id: 'PloppyNop39',
     _name: 'Crumbface',
-    _age: 137,
+    _age: 137
 }
 ```
